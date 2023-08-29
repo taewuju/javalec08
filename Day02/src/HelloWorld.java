@@ -2,7 +2,7 @@
 public class HelloWorld {
 
 	public static void main(String[] args) {
-		System.out.println("Hello World");
+		// git 테스트
+		System.out.print("Hello World");
 	}
-//Git test
 }
