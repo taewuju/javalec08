@@ -101,21 +101,21 @@ public class ControlExample {
 		
 		
 
-		// 정수 최댓값 최솟값 구하기
-		// int, byte, short의 최댓값과 최솟값을 출력하는 프로그램을 만드세요.
-		// 연산은 '비트연산'만 이용함.
-		
-		// 예시.
-		System.out.println("int : " + intMin + " ~ " + intMax);
-				
+//		// 정수 최댓값 최솟값 구하기
+//		// int, byte, short의 최댓값과 최솟값을 출력하는 프로그램을 만드세요.
+//		// 연산은 '비트연산'만 이용함.
+//		
+//		// 예시.
+//		System.out.println("int : " + intMin + " ~ " + intMax);
+//				
 		int max = 1 << 30;  // 최댓값
 		System.out.println(max + " = " + Integer.toBinaryString(max));
 		
 		
-		
+	}
 	}
 	
 	
 	
 	
-}
+
