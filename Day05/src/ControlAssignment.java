@@ -30,8 +30,20 @@ public class ControlAssignment {
 		System.out.println("이진법 정수 최댓값 : "+Integer.toBinaryString(max));
 	
 	
+		
+		// 쌤 예시본 //
+		byte b = (byte)128;  
+		System.out.println(b);
+		System.out.println(~b);
+		
+		byte c = 1;  
+		System.out.println(c << 7); // 최댓값 1000 0000 이 되어 음수여야 하지만 int로 연산되므로 양수로 나옴.
+		System.out.println((byte)(c << 7));  // 형변환을 해줘야 한다.
+		System.out.println(~(c << 7));  // 최솟값 0000 0001
 	
-	
+		byte d = -1;  // 1111 1111
+		System.out.println(d >>> 1);  // 최댓값 0111 1111을 만드려면 부호비트를 0으로 채우도록 한다. 하지만 int로 연되어 2147483647이 나온다.
+		System.out.println((byte)(d >>> 1));
 	
 	
 	
