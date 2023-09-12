@@ -38,6 +38,7 @@ public class DeepCopyEx {
 		System.out.println("bb(" +System.identityHashCode(bb)+ ")=" +Arrays.toString(bb));
 		
 		bb = aa.clone();  // Deep Copy 메서드: 다른 주소를 참조하게 된다.
+		// 여기서 clone이라는 메서드는 aa의 복제값을 bb라는 변수의 타입으로 리턴한다. (인자는 없다)
 		// Arrays.copyOfRange(); 범위를 넣어 복사하는 메서드도 있다.
 		System.out.println("aa(" +System.identityHashCode(aa)+ ")=" +Arrays.toString(aa));
 		System.out.println("bb(" +System.identityHashCode(bb)+ ")=" +Arrays.toString(bb));
