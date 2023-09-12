@@ -49,11 +49,11 @@ public class MethodEx2 {
 		int[] a = {1,2,3,4,5};
 		int[] b = sliceArray(a,2);
 		System.out.println();
-		System.out.println(Arrays.toString(b));
+		System.out.println(Arrays.toString(b));  // [3,4,5]
 		
 		
 		// 메서드를 선언
-		// 네서드명은 sliceArray
+		// 메서드명은 sliceArray
 		// 인자는 int[], int from
 		// 결과값 return int[]
 		// 실행문은 인자로 받은 int[]의 from 인덱스부터 끝까지의
@@ -61,6 +61,7 @@ public class MethodEx2 {
 		// ex) 인자 int[] a = {1,2,3,4,5};
 		// 	   int[] b = sliceArray(a,1);
 		//	   System.out.println(Arrays.toString(b));  --> {2,3,4,5}
+		// 힌트 for문
 		
 		int[] sliceArray(int[] x, int from) {
 			
