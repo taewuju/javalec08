@@ -27,7 +27,7 @@ public class ScopeExample {
 //	 
 //	 System.out.println(i);  // for문을 벗어났으므로 같은 변수명을 사용할 수 없다.
 	
-	 int = i;
+	 int i;
 	 for(i=0; i<10; i++) {
 	 
 	 }
