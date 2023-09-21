@@ -7,6 +7,8 @@ public class STest {  // SinglePattern과 같은 패키지에 있으므로 impor
 		SinglePattern s1 = new SinglePattern();
 		SinglePattern s2 = new SinglePattern();
 		SinglePattern s3 = new SinglePattern();
+		Object obj = new SinglePattern();  // 상속 관련
+		
 		s1.printSharedData();
 		s2.printSharedData();
 		s3.printSharedData();

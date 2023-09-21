@@ -36,5 +36,9 @@ public class Computer {
 		com.범용비디오카드달기(new Radeon());  // 괜찮고,
 		com.범용비디오카드달기(new GeForce());  // 괜찮음.
 		
+		
+		// class 대한민국비디오카드 extends VideoCard
+		// showMonitor() 메서드를 오버라이딩
+		// com.비디오카드달기(new 대한민국비디오카드());
 	}
 }
