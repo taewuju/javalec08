@@ -8,16 +8,14 @@ class User {
 	}
 	
 	
-//	boolean isSameUser(User user) {  // 동명이인인가?
-//		return this.name.equals(user.name);
-//	}
-//		
-//	boolean isSameUser2(User user) {  // 동명이인 이고 + 나이도 같은가?
-//		return this.name.equals(user.name) && this.age == user.age;
-//	}
-//}
-
-
+	boolean isSameUser(User user) {  // 동명이인인가?
+		return this.name.equals(user.name);
+	}
+		
+	boolean isSameUser2(User user) {  // 동명이인 이고 + 나이도 같은가?
+		return this.name.equals(user.name) && this.age == user.age;
+	}
+}
 		
 	
 interface InterA {
@@ -51,15 +49,17 @@ public class Lambda {
 		
 		// 익명객체
 		InterA func = new InterA() {
-		boolean isSameUser(User user) {  // 동명이인인가?
-		return this.name.equals(user.name);
-	}
-		
-	boolean isSameUser2(User user) {  // 동명이인 이고 + 나이도 같은가?
-		return this.name.equals(user.name) && this.age == user.age;
-	}		
-	};
-		
+			@Override
+			public boolean isSameUser(User user1, User user2) {
+				return user1.name.equals(user2.name);
+			}
+
+			@Override
+			public boolean isSameUser2(User user, User user2) {
+				return user1.name.equals(user2.name) && user1.age == user2.age;
+			}
+		};
+			
 	System.out.println("동명이인? : " +user1.isSameUser(user2));
 	System.out.println("동명이인+동갑? : " +user1.isSameUser2(user2));
 

@@ -48,7 +48,7 @@ public class MapEx {
 			studentList.add(new Student("이종석" +i, i));
 		}
 		
-		for(Object v : list) {
+		for(Object v : studentList) {
 			Student std = (Student)v;
 //			v.introdueMySelf();
 			std.introduceMySelf();					
@@ -64,9 +64,9 @@ public class MapEx {
 		System.out.println("result =" +result);  // 문법적으론 오류 없으나, 컴파일시 오류 남.	=> 보완을 위해 제너릭 기능이 나옴.	
 	}		
 	
-	Map<String, Student> map2 = new HashMap<String, Student>();
-	map2.put("1", new Student("이종석", 1));
-	map2.put("2", new Student("이종석B", 2));
+	Map<String,Student> map2 = new HashMap<String, Student>();
+	map2.put("1", new Student("이종석", 1)); 
+	map2.put("2", new Student("이종석B", 2)); 
 	map2.put("3", new Student("이종석A", 3));
 	map2.get("1").introduceMySelf();
 	//map2.get(map2);
