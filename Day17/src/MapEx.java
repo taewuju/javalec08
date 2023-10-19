@@ -62,30 +62,34 @@ public class MapEx {
 //		List param = List.of("1", "2", 4,5,6);
 		int result = sum(param);
 		System.out.println("result =" +result);  // 문법적으론 오류 없으나, 컴파일시 오류 남.	=> 보완을 위해 제너릭 기능이 나옴.	
-	}		
+		
 	
 	Map<String,Student> map2 = new HashMap<String, Student>();
 	map2.put("1", new Student("이종석", 1)); 
 	map2.put("2", new Student("이종석B", 2)); 
 	map2.put("3", new Student("이종석A", 3));
 	map2.get("1").introduceMySelf();
-	//map2.get(map2);
-	
+	//map2.get(map2)
+
 	Map map3 = new HashMap();
-	map3.put("1", new Student("이종석", 1));
-	map3.put("2", new Student("이종석B", 2));
-	map3.put("3", new Student("aaa"));
+	map3.put("1", new Student("이종석", 1)); 
+	map3.put("2", new Student("이종석B", 2)); 
+	map3.put("3", new String("aaaa"));
 	((Student)map3.get("1")).introduceMySelf();
 	
 	
-	public static int sum(List<Integer> list) {  
-		
-		int result = 0;
-		for(Integer v : list) {
-			result += Integer.parseInt(v.toString());
-		}
-		
-	return 0;
+	
+	
+	
+}
+
+
+public static int sum(List<Integer> list) {
+	int result = 0;
+	for(Integer v : list) {
+		result += Integer.parseInt(v.toString());
 	}
+	return result; 
+} 
 
 }
