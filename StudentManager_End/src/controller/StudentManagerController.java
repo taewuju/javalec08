@@ -31,7 +31,7 @@ public class StudentManagerController {
             System.out.print("0. 종료 \n");
             System.out.print("명령어를 입력해 주세요. : ");
 
-
+            // 사용자의 입력을 기다리는 부분
             command = Integer.parseInt(scanner.nextLine());
 
             switch(command) {
@@ -72,7 +72,7 @@ public class StudentManagerController {
         String searchTxt = scanner.nextLine();
         List<Student> list = null;
 
-        if(searchTxt.trim().equals("")) {
+        if(searchTxt.trim().equals("")) {  // trim은 문자를 자르는 메소드. 여기는 공백 입력됐을 때
             list = service.searchStudents(null);
         } else {
             Student student = new Student();

@@ -1,11 +1,17 @@
 package controller;
 
+import service.ManagerService;
+import service.impl.*;
+import entity.Student;
+import java.util.*;
+
 public class ManagerController {
 
-    private final ManagerService service = new ManagerServiceImpl();
+    private final ManagerService service = new ManageServiceImpl();
     private final Scanner scanner = new Scanner(System.in);
 
 
+    //-- 학생관리 프로그램 시작
     public void systemStart() throws Exception {
 
         int command = 0;
@@ -57,6 +63,7 @@ public class ManagerController {
 
     }
 
+    //-- 학생 검색
     private void systemSearchStudent() throws Exception{
         System.out.print("조회하실 학생이름을 입력해 주세요 (미입력시 전체조회) : ");
 
@@ -77,6 +84,7 @@ public class ManagerController {
 
     }
 
+    //-- 학생 등록
     private void systemRegistStudent() throws Exception {
 
         String name, grade;
@@ -98,6 +106,7 @@ public class ManagerController {
 
     }
 
+    //-- 학생 수정
     private void systemModifyStudent() throws Exception {
 
         System.out.print("수정하실 학생번호를 입력해 주세요 : ");
@@ -146,6 +155,7 @@ public class ManagerController {
 
     }
 
+    //-- 학생 삭제
     private void systemDeleteStudent() throws Exception {
 
         //Scanner scanner = new Scanner(System.in);
